@@ -6,6 +6,7 @@ import "./models/Book.js";
 const app = express();
 
 try {
+  app.use(express.json());
   app.listen(PORT);
   app.use(bookRoutes);
 
